@@ -5,6 +5,22 @@ const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const webpack = require("webpack");
 const path = require("path");
+const dotenv = require("dotenv");
+var cors = require('cors');
+var express= require('express');
+
+const app = express();
+dotenv.config({path:'variables.env', silent: true });
+
+app.use('/public',function(req, res, next) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  // Request headers you wish to allow
+  res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  // Set to true if you need the website to include cookies in the requests sent
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  // Pass to next layer of middleware
+  next();
+});
 
 if (!process.env.API_URI) {
   throw new Error("Environment variable API_URI not set");
@@ -13,7 +29,7 @@ if (!process.env.API_URI) {
 module.exports = ({ sourceDir, distDir }) => ({
   devtool: "source-map",
   entry: {
-    app: `${sourceDir}/index.tsx`,
+    app: sourceDir+"/index.tsx",
   },
   module: {
     rules: [
