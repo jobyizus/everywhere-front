@@ -4,7 +4,8 @@
   "version": "2.11.0-a.0",
   "private": true,
   "author": "Mirumee",
-  "main": "webpack.config.js",
+  "homepage": "https://getsaleor.com/",
+  "main": "dist/index.js",
   "browserslist": "last 2 versions",
   "dependencies": {
     "@babel/runtime": "^7.5.5",
