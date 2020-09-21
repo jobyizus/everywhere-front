@@ -6,11 +6,10 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const webpack = require("webpack");
 const path = require("path");
 const dotenv = require("dotenv");
+/*
 var cors = require('cors');
 var express= require('express');
-
 const app = express();
-dotenv.config({path:'variables.env', silent: true });
 
 app.use('/public',function(req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -21,6 +20,8 @@ app.use('/public',function(req, res, next) {
   // Pass to next layer of middleware
   next();
 });
+*/
+dotenv.config({path:'variables.env', silent: true });
 
 if (!process.env.API_URI) {
   throw new Error("Environment variable API_URI not set");
