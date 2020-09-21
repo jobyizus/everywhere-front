@@ -1,10 +1,10 @@
 const path = require("path");
 const merge = require("webpack-merge");
+
+/*
 var cors = require('cors');
 var express= require('express');
-
 const app = express();
-
 app.use('/public',function(req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   // Request headers you wish to allow
@@ -14,6 +14,7 @@ app.use('/public',function(req, res, next) {
   // Pass to next layer of middleware
   next();
 });
+*/
 require("dotenv").config();
 
 const baseConfig = require("./config/webpack/config.base");
