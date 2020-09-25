@@ -1,0 +1,217 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"ProductID"
+			],
+			[
+				"prod",
+				"product"
+			],
+			[
+				"pro",
+				"product"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/python-apps/ecommerce/gamarra-retail-s/public/js/main.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/python-apps/ecommerce/gamarra-retail-s/index.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/python-apps/ecommerce/gamarra-retail-s/webpack.config.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/python-apps/ecommerce/gamarra-retail-s/package.json",
+		"/D/nginx-1.5.4/html/www.yizuslabs.com-mecanic/main.html",
+		"/D/nginx-1.5.4/html/index - copia.html",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/frontend/package.json",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/webapps/yizuslabs/www.yizuslabs.com-mecanics/www.yizuslabs.com-mecanics/index.html",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/webapps/yizuslabs/www.yizuslabs.com-mecanics/www.yizuslabs.com-mecanics/mobilemechanicwatford.com/index.html",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-mecanics/package-lock.json",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/src/index.css",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/src/http-common.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/src/App.test.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/src/App.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/src/services/tutorial.service.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/src/index.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/src/setupTests.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/src/serviceWorker.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/src/components/tutorials-list.component.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/src/components/add-tutorial.component.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/src/App.css",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/.env",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react-crud/src/components/tutorial.component.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/frontend/src/index.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/app-rest-client/src/pages/index.js.txt",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/src/screens/HomeScreen.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/src/index.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/src/App.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/src/actions/productActions.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/src/constants/productConstants.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/node_modules/react-scripts/config/webpack.config.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/node_modules/react-scripts/config/env.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/package.json",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/react-apps/react_starter/package.json",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/package-lock.json",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/src/index.css",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/src/data.js",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/public/manifest.json",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/public/index.html",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/src/App.css",
+		"/E/YIZUSLABSPACE/proyectos/desarrollo/node-apps/node-react-ecommerce/frontend/src/store.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 122.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "variables.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 280.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

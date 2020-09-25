@@ -1,0 +1,6 @@
+npm install --global --production windows-build-tools;
+
+
+rm -Rf node_modules
+rm -f package-lock.json
+npm install
