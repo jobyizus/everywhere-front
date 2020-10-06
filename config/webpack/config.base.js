@@ -12,7 +12,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = ({ sourceDir, distDir }) => ({
   entry: {
-      main: './src/index.js'
+    app: `${sourceDir}/index.js`,
     },
     output: {
       path: path.join(__dirname, 'dist'),
@@ -23,6 +23,17 @@ module.exports = ({ sourceDir, distDir }) => ({
     devtool: 'source-map',
     module: {
       rules: [
+        {
+          test: /\.(scss|css)$/,
+          use: [
+            "style-loader",
+            {
+              loader: "css-loader",
+              options: { sourceMap: true }
+            },
+            { loader: "sass-loader" }
+          ]
+        },
         {
           exclude: /node_modules/,
           loader: "ts-loader",
@@ -144,10 +155,10 @@ module.exports = ({ sourceDir, distDir }) => ({
         new TsconfigPathsPlugin({
           configFile: "./tsconfig.json",
         }),
-        new MiniCssExtractPlugin({
+       /* new MiniCssExtractPlugin({
           filename: "[name].css",
           chunkFilename: "[id].css"
-        })
+        })*/
       //  new HotModulePlugin()
       ],
     },

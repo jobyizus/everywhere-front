@@ -10,8 +10,7 @@ import { ConfigInput } from "@saleor/sdk/lib/types";
 import {
   apiUrl,
   sentryDsn,
-  sentrySampleRate,
-  serviceWorkerTimeout,
+  sentrySampleRate
 } from "./constants";
 import { history } from "./history";
 

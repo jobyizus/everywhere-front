@@ -36,10 +36,5 @@ const inputStyle = css<{ checked: boolean }>`
     }`}
 `;
 
-export const Input = styled.div<{ checked: boolean }>`
-  ${inputStyle}
-`;
-
-export const LabeledInput = styled.label<{ checked: boolean }>`
-  ${inputStyle}
-`;
+export const Input = styled.div<{ checked: boolean }>`${inputStyle}`;
+export const LabeledInput = styled.label<{ checked: boolean }>`${inputStyle}`;

@@ -2,7 +2,6 @@
   "compilerOptions": {
     "baseUrl": ".",
     "esModuleInterop": true,
-    "esModuleInterop": true,
     "module": "commonjs",
     "jsx": "react",
     "lib": ["es2017", "dom", "esnext"],

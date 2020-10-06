@@ -5,7 +5,7 @@ import { Transition } from "react-transition-group";
 
 import { Overlay } from ".";
 import * as S from "./styles";
-import { IProps, Position, TransitionState } from "./types";
+import { IProps, Position/*, TransitionState*/ } from "./types";
 
 let portalRoot = document.getElementById("portal-root");
 if (!portalRoot) {
@@ -15,7 +15,7 @@ if (!portalRoot) {
 }
 
 describe("<Overlay />", () => {
-  const DEFAULT_STATE = "exited";
+  //const DEFAULT_STATE = "exited";
   const Children = () => <div>Some content</div>;
   const position: Position = "center";
 
@@ -36,6 +36,7 @@ describe("<Overlay />", () => {
   const renderOverlayContent = (
     props: IProps,
     state: TransitionState = DEFAULT_STATE
+   // state:'exited'
   ) => renderOverlay(props).find(Transition).renderProp("children")(state);
 
   it("exists", () => {
