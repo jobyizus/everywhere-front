@@ -1,7 +1,7 @@
 import React from "react";
 import ReactSVG from "react-svg";
 
-import amexImg from "images/amex.svg";
+import amexImg from   'images/amex.svg';
 import discoverImg from "images/discover.svg";
 import jcbImg from "images/jcb.svg";
 import maestroImg from "images/maestro.svg";

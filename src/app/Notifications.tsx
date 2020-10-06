@@ -2,7 +2,7 @@ import React from "react";
 import { useIntl } from "react-intl";
 import { useAlert } from "react-alert";
 
-import { useAuth } from "@saleor/sdk";
+//import { useAuth } from "@saleor/sdk";
 import { ServiceWorkerContext } from "@components/containers";
 
 const Notifications: React.FC = () => {
@@ -35,14 +35,14 @@ const Notifications: React.FC = () => {
     }
   }, [updateAvailable]);
 
-  const { authenticated } = useAuth();
+  //const { authenticated } = useAuth();
   const [prevAuthenticated, setPrevAuthenticated] = React.useState<
     boolean | undefined
   >();
 
   React.useEffect(() => {
-    if (prevAuthenticated !== undefined && authenticated !== undefined) {
-      if (!prevAuthenticated && authenticated) {
+    if (prevAuthenticated !== undefined /*&& authenticated !== undefined*/) {
+      if (!prevAuthenticated /*&& authenticated*/) {
         alert.show(
           {
             title: intl.formatMessage({
@@ -51,7 +51,7 @@ const Notifications: React.FC = () => {
           },
           { type: "success" }
         );
-      } else if (prevAuthenticated && !authenticated) {
+      } else if (prevAuthenticated /*&& !authenticated*/) {
         alert.show(
           {
             title: intl.formatMessage({
@@ -61,11 +61,11 @@ const Notifications: React.FC = () => {
           { type: "success" }
         );
       }
+     // setPrevAuthenticated(authenticated);
+    }/* else if (authenticated !== undefined) {
       setPrevAuthenticated(authenticated);
-    } else if (authenticated !== undefined) {
-      setPrevAuthenticated(authenticated);
-    }
-  }, [authenticated]);
+    }*/
+  }, null/*[authenticated]*/);
 
   return null;
 };

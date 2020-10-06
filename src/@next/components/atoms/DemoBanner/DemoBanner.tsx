@@ -4,7 +4,7 @@ import Media from "react-responsive";
 
 import { mediumScreen } from "@styles/constants";
 
-import LogoSmall from "../../../../images/logo-small.svg";
+import LogoSmall from "images/logo-small.svg";
 import * as S from "./styles";
 
 export const DemoBanner: React.FC = () => {

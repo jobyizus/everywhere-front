@@ -1,10 +1,3 @@
-npm install --global --production windows-build-tools;
-
-
-rm -Rf node_modules
-rm -f package-lock.json
-npm install
-
 
 
 const path = require('path')
@@ -15,14 +8,10 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HotModulePlugin = require("webpack").HotModuleReplacementPlugin;
 
 
-const sourceDir = path.join(__dirname, "./src");
-const distDir = path.join(__dirname, "./dist");
-
-module.exports = {
-    entry: {
+module.exports = ({ sourceDir, distDir }) => ({
+  entry: {
       main: './src/index.js'
     },
     output: {
@@ -41,37 +30,15 @@ module.exports = {
             experimentalWatchApi: true,
             transpileOnly: true,
           },
-          test: /\.js$|jsx/,
+          test: /\.tsx?$/,
         },
         {
-          test: /\.js$|jsx/,
           exclude: /node_modules/,
           loader: "babel-loader",
           options: {
             configFile: "./babel.config.js",
-          }
-        },
-        {
-          // Loads the javacript into html template provided.
-          // Entry point is set below in HtmlWebPackPlugin in Plugins 
-          test: /\.html$/,
-          use: [
-            {
-              loader: "html-loader",
-              //options: { minimize: true }
-            }
-          ]
-        },
-        {
-          test: /\.(scss|css)$/,
-          use: [
-            "style-loader",
-            {
-              loader: "css-loader",
-              options: { sourceMap: true }
-            },
-            { loader: "sass-loader" }
-          ]
+          },
+          test: /\.(jsx?|tsx?)$/,
         },
         {
           test: /\.(woff2?|ttf|eot)$/,
@@ -87,13 +54,15 @@ module.exports = {
           ],
         },
         {
-          test: /\.(png|jp(e*)g|svg|gif)$/i,
+          test: /\.(gif|jpg|png|svg)$/,
           use: [
             {
               loader: "file-loader",
               options: {
-                name: '../../images/[hash]-[name].[ext]',
-              }
+                name: "[name].[ext]",
+                outputPath: "images/",
+                publicPath: "/images/",
+              },
             },
             {
               loader: "image-webpack-loader",
@@ -112,9 +81,16 @@ module.exports = {
               },
             },
           ],
-        }
-        
+        },
       ]
+    },
+    node: {
+      fs: "empty",
+      module: "empty",
+    },
+    output: {
+      path: distDir,
+      publicPath: "/",
     },
     plugins: [
       new CleanWebpackPlugin({
@@ -142,6 +118,13 @@ module.exports = {
       logo: `${sourceDir}/images/favicon.png`,
       prefix: "images/favicons/",
     }),
+    new webpack.EnvironmentPlugin({
+      API_URI: "http://localhost:8000/graphql/",
+      DEMO_MODE: false,
+      GTM_ID: undefined,
+      SENTRY_APM: "0",
+      SENTRY_DSN: null,
+    }),
    /*   new HtmlWebPackPlugin({
         template: "./src/html/index.html",
         filename: "./index.html",
@@ -156,16 +139,16 @@ module.exports = {
         react: path.resolve("./node_modules/react"),
         "react-dom": "@hot-loader/react-dom",
       },
-      extensions: [".ts", ".tsx", ".js", ".jsx"],
+      extensions: [".ts", ".tsx", ".js", ".jsx",".scss"],
       plugins: [
         new TsconfigPathsPlugin({
           configFile: "./tsconfig.json",
-        })
-     /*   new MiniCssExtractPlugin({
+        }),
+        new MiniCssExtractPlugin({
           filename: "[name].css",
           chunkFilename: "[id].css"
-        }),*/
+        })
       //  new HotModulePlugin()
       ],
     },
-  }
+  });
